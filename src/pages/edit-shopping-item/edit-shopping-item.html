@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{item.itemname}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>
+      Item Name
+    </ion-label>
+
+    <ion-input  [(ngModel)]="item.itemname" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>
+  number
+    </ion-label>
+    <ion-input type="number" [(ngModel)]="item.itemnumber"></ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="editItem(item)">
+    Edit Item
+  </button>
+
+</ion-content>
